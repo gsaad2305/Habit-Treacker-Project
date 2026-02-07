@@ -1,0 +1,205 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      width: 100%;
+      height: 64px;
+      padding: 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    
+    header h1 {
+      font-style: italic;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111827;
+      letter-spacing: 0.5px;
+    }
+
+   
+    header button,
+    header a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   
+    header img {
+      width: 32px;
+      height: 32px;
+      margin-left: 12px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    
+    header img:hover {
+      transform: scale(1.12);
+      opacity: 0.85;
+    }
+
+    
+    .calendar {
+      background: transparent;
+      border: none;
+    }
+
+    
+    header .calendar:last-child {
+      display: none;
+    }
+
+    .boasvindas {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .container {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin: 20px;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    #day {
+      border-radius: 12px;
+      background-color: #ddd;
+      margin: 10px;
+      padding: 8px;
+      font-style:italic;
+      font-weight:bold;
+    }
+
+    .habits {
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 2px 0px 1px black;
+      height: auto;
+      width: 500px;
+    }
+
+    .temporizador {
+      color: white;
+      text-align: center;
+      background: rgb(32, 32, 32);
+      width: 300px;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 2px 1px 2px black;
+
+    }
+
+    .temporizador h1 {
+      margin-top: 20px;
+      font-size: 2em;
+    }
+
+    .temporizador input {
+      margin-top: 20px;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    #display {
+      font-size: 3em;
+      margin-top: 20px;
+
+    }
+
+    .temporizador button {
+      border: none;
+      background: none;
+    }
+
+    .temporizador img {
+      width: 40px;
+      height: 40px;
+    }
+    .temporizador img:hover{
+      transform: scale(1.12);
+    }
+
+    ul {
+      margin: 12px;
+      margin-top: 20px;
+    }
+
+    ul li {
+
+      background: white;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 4px solid #007bff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05)
+    }
+   
+    .create {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .progresso {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .porcentagem {
+      width: 60%;
+      height: 18px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+
+      margin: 10px 0;
+    }
+
+    .porcentagem-barra {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #00c853, #64dd17);
+      transition: width 0.3s ease;
+    }
+
+    #progressoTexto {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .create img {
+      width: 45px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .create img:hover{
+      transform: scale(1.12);
+    }
+    #create button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
