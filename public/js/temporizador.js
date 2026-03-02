@@ -5,7 +5,6 @@ const audio = new Audio("audio/den-den-mushi meloboom.mp3");
 function startTimer() {
   if (timer) return;
 
-  // Se ainda não começou, pega o valor dos inputs
   if (total === 0) {
     const hrs = parseInt(document.getElementById("hours").value) || 0;
     const mins = parseInt(document.getElementById("min").value) || 0;

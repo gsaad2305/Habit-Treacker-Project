@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A versão 1.2 do projeto conta agora com melhorias significativas no CSS da tela de login, o usuário agora adiciona novos hábitos na tela principal sem necessidade de ir para outra página + servidor node.js + express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsaad2305/Lista-de-Tarefas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsaad2305/Lista-de-Tarefas/issues"
+  },
+  "homepage": "https://github.com/gsaad2305/Lista-de-Tarefas#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "nodemon": "^3.1.14"
+  }
+}

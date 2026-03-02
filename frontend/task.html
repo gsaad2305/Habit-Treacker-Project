@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/task.css">
+  <title>Habbit-tracker</title>
+
+</head>
+
+<body>
+  <header>
+
+    <h1>HabitsDicipline</h1>
+
+    <a href="https://github.com/gsaad2305/Lista-de-Tarefas/blob/main/Readme.md" target="_blank"><img src="../public/img/ajuda.png"
+        alt="ajuda" id="ajuda"></a>
+
+    <div class="calendar"></div>
+
+  </header>
+
+  <section class="boasvindas">
+    <h1>Bem-vindo <%= name %></h1>
+    <span id="day"></span>
+  </section>
+  <section class="container">
+    <div class="habits">
+      <div class="pendente">
+        <h2>Tarefas a completar</h2>
+        <ul id="pending"></ul>
+      </div>
+     
+      <div class="completada">
+        <h2>Tarefas completas </h2>
+        <ul id="completed"></ul>
+      </div>
+    </div>
+
+    <section class="temporizador">
+
+      <input type="number" name="hours" id="hours" min="0" max="23" placeholder="horas" value="0">
+
+      <input type="number" min="0" max="59" value="1" id="min" placeholder="minutos">
+
+      <input type="number" name="segundos" id="seg" placeholder="segundos" min="0" max="59" value="0">
+
+      <h2 id="display">00:00:00</h2>
+
+      <button class="start" onclick="startTimer()"><img src="../public/img/play(1).png" alt=""></button>
+      <button class="pause" onclick="pauseTimer()"><img src="../public/img/pause-button.png" alt=""></button>
+      <button id="reset" onclick="resetTimer()"><img src="../public/img/rotate.png" alt=""></button>
+
+    </section>
+
+  </section>
+
+  <section class="progresso">
+
+    <div class="porcentagem">
+
+      <div class="porcentagem-barra" id="barra"></div>
+
+    </div>
+
+    <p id="progressoTexto">0% concluído</p>
+  </section>
+
+  <section class="create">
+    
+    <button onclick="openModal()" style="background: none; border: none; cursor: pointer;">
+      <img src="../public/img/plus.png" alt="Adicionar Hábito">
+    </button>
+
+    <div id="modalOverlay" class="modal-overlay" style="display: none;">
+
+      <div class="modal-content">
+
+        <h3>Novo Hábito</h3>
+        <input type="text" id="taskInput" placeholder="Ex: Estudar Node.js...">
+        <div class="modal-buttons">
+          <button onclick="closeModal()" class="cancelar">Cancelar</button>
+          <button onclick="addTask()" class="adicionar-task">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="../public/js/habits.js"></script>
+  <script src="../public/js/mensage.js"></script>
+  <script src="../public/js/temporizador.js"></script>
+</body>
+
+</html>
