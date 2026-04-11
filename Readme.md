@@ -57,7 +57,7 @@ http://localhost:3000
 ```
 Se iniciar via live server, o index.html não redirecionara para página task.html retornando um erro e se inicar o task.html ele não ira salvar os dados.
 
-## Melhorais planjedas:
+## Melhorias planejadas:
 - Integração com banco de dados (SQLite ou MongoDB)
 - Sistema de autenticação mais completo
 - Criptografia de senha
