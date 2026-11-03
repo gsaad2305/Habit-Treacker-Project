@@ -1,7 +1,7 @@
 let total = 0;
 let timer = null;
 
-const audio = new Audio("audio/den-den-mushi meloboom.mp3");
+const audio = new Audio("/public/audio/den-den-mushi meloboom.mp3");
 function startTimer() {
   if (timer) return;
 
